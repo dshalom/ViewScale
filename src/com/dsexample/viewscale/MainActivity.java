@@ -131,23 +131,12 @@ public class MainActivity extends Activity {
 			}
 		});
 
-		final ExpandableTextView t2 = (ExpandableTextView) findViewById(R.id.t2);
+		final MyView t2 = (MyView) findViewById(R.id.t2);
 		t2.setOnClickListener(new OnClickListener() {
 
 			@Override
 			public void onClick(View v) {
-				if (!t2exp) {
-
-					// TODO Auto-generated method stub
-					t2.setText("dsafdsf  fdsafdsa  dsfdasf  sadfdsfasdf sdfasdfasdf dsfdsafdsa dsfdsafadadfda "
-							+ "dsafdsf  fdsafdsa  dsfdasf  sadfdsfasdf sdfasdfasdf dsfdsafdsa dsfdsafadadfda "
-
-					);
-					t2exp = true;
-				} else {
-					t2.setText(R.string.hello_world2);
-					t2exp = false;
-				}
+				t2.toggle();
 
 			}
 		});

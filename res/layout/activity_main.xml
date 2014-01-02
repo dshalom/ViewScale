@@ -16,7 +16,7 @@
         android:layout_margin="12dp" 
         />
     
-    <com.dsexample.viewscale.ExpandableTextView
+    <com.dsexample.viewscale.MyView
         android:id="@+id/t2"
         style="@style/CodeFont"
         android:text="@string/hello_world2"
